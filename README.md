@@ -1,1 +1,1 @@
-# KIST-Dual-arm-Operational-Space-Control
+# KIST-Dual-Arm-Operational-Space-Control
