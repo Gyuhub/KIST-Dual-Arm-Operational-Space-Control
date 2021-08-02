@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../bin/lib/libdualarm_lib.a  CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.o CMakeFiles/dualarm_lib.dir/src/controller.cpp.o CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.o CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.o CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.o
+/usr/bin/ranlib ../bin/lib/libdualarm_lib.a

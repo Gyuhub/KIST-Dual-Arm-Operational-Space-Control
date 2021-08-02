@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/kistarcl/mujoco_ws/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/kistarcl/mujoco_ws/include -I/home/kistarcl/mujoco_ws/../.mujoco/mujoco200_linux/include -I/usr/local/include/qpOASES -isystem /usr/local/include/eigen3  -g   -std=c++11 -Ofast -o CMakeFiles/dualarm_exe.dir/src/simulate.cpp.o -c /home/kistarcl/mujoco_ws/src/simulate.cpp",
+  "file": "/home/kistarcl/mujoco_ws/src/simulate.cpp"
+},
+{
+  "directory": "/home/kistarcl/mujoco_ws/build",
+  "command": "/usr/bin/x86_64-linux-gnu-gcc-7  -I/home/kistarcl/mujoco_ws/include -I/home/kistarcl/mujoco_ws/../.mujoco/mujoco200_linux/include -I/usr/local/include/qpOASES  -g   -std=c++11 -Ofast -o CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.o   -c /home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c",
+  "file": "/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c"
+},
+{
+  "directory": "/home/kistarcl/mujoco_ws/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/kistarcl/mujoco_ws/include -I/home/kistarcl/mujoco_ws/../.mujoco/mujoco200_linux/include -I/usr/local/include/qpOASES  -g   -std=c++11 -Ofast -o CMakeFiles/dualarm_lib.dir/src/controller.cpp.o -c /home/kistarcl/mujoco_ws/src/controller.cpp",
+  "file": "/home/kistarcl/mujoco_ws/src/controller.cpp"
+},
+{
+  "directory": "/home/kistarcl/mujoco_ws/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/kistarcl/mujoco_ws/include -I/home/kistarcl/mujoco_ws/../.mujoco/mujoco200_linux/include -I/usr/local/include/qpOASES  -g   -std=c++11 -Ofast -o CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.o -c /home/kistarcl/mujoco_ws/src/quadraticprogram.cpp",
+  "file": "/home/kistarcl/mujoco_ws/src/quadraticprogram.cpp"
+},
+{
+  "directory": "/home/kistarcl/mujoco_ws/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/kistarcl/mujoco_ws/include -I/home/kistarcl/mujoco_ws/../.mujoco/mujoco200_linux/include -I/usr/local/include/qpOASES  -g   -std=c++11 -Ofast -o CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.o -c /home/kistarcl/mujoco_ws/src/robotmodel.cpp",
+  "file": "/home/kistarcl/mujoco_ws/src/robotmodel.cpp"
+},
+{
+  "directory": "/home/kistarcl/mujoco_ws/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/kistarcl/mujoco_ws/include -I/home/kistarcl/mujoco_ws/../.mujoco/mujoco200_linux/include -I/usr/local/include/qpOASES  -g   -std=c++11 -Ofast -o CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.o -c /home/kistarcl/mujoco_ws/src/trajectory.cpp",
+  "file": "/home/kistarcl/mujoco_ws/src/trajectory.cpp"
+}
+]
