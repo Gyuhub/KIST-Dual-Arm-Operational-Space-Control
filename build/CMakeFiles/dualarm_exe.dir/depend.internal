@@ -16,4 +16,4 @@ CMakeFiles/dualarm_exe.dir/src/simulate.cpp.o
  ../include/quadraticprogram.h
  ../include/robotmodel.h
  ../include/trajectory.h
- /home/kistarcl/mujoco_ws/src/simulate.cpp
+ /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/simulate.cpp

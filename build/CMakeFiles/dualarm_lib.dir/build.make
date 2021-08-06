@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kistarcl/mujoco_ws
+CMAKE_SOURCE_DIR = /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kistarcl/mujoco_ws/build
+CMAKE_BINARY_DIR = /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dualarm_lib.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/dualarm_lib.dir/flags.make
 
 CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.o: CMakeFiles/dualarm_lib.dir/flags.make
 CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.o: /home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kistarcl/mujoco_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.o"
-	/usr/bin/x86_64-linux-gnu-gcc-7 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.o   -c /home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.o   -c /home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c
 
 CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.i"
-	/usr/bin/x86_64-linux-gnu-gcc-7 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c > CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c > CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.i
 
 CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.s"
-	/usr/bin/x86_64-linux-gnu-gcc-7 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c -o CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c -o CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.s
 
 CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools
 
 CMakeFiles/dualarm_lib.dir/src/controller.cpp.o: CMakeFiles/dualarm_lib.dir/flags.make
 CMakeFiles/dualarm_lib.dir/src/controller.cpp.o: ../src/controller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kistarcl/mujoco_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dualarm_lib.dir/src/controller.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dualarm_lib.dir/src/controller.cpp.o -c /home/kistarcl/mujoco_ws/src/controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dualarm_lib.dir/src/controller.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dualarm_lib.dir/src/controller.cpp.o -c /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/controller.cpp
 
 CMakeFiles/dualarm_lib.dir/src/controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dualarm_lib.dir/src/controller.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kistarcl/mujoco_ws/src/controller.cpp > CMakeFiles/dualarm_lib.dir/src/controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/controller.cpp > CMakeFiles/dualarm_lib.dir/src/controller.cpp.i
 
 CMakeFiles/dualarm_lib.dir/src/controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dualarm_lib.dir/src/controller.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kistarcl/mujoco_ws/src/controller.cpp -o CMakeFiles/dualarm_lib.dir/src/controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/controller.cpp -o CMakeFiles/dualarm_lib.dir/src/controller.cpp.s
 
 CMakeFiles/dualarm_lib.dir/src/controller.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/dualarm_lib.dir/src/controller.cpp.o.provides.build: CMakeFiles/duala
 
 CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.o: CMakeFiles/dualarm_lib.dir/flags.make
 CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.o: ../src/quadraticprogram.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kistarcl/mujoco_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.o -c /home/kistarcl/mujoco_ws/src/quadraticprogram.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.o -c /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/quadraticprogram.cpp
 
 CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kistarcl/mujoco_ws/src/quadraticprogram.cpp > CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/quadraticprogram.cpp > CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.i
 
 CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kistarcl/mujoco_ws/src/quadraticprogram.cpp -o CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/quadraticprogram.cpp -o CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.s
 
 CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.o: CMakeFiles/dualarm_lib.dir/flags.make
 CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.o: ../src/robotmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kistarcl/mujoco_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.o -c /home/kistarcl/mujoco_ws/src/robotmodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.o -c /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/robotmodel.cpp
 
 CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kistarcl/mujoco_ws/src/robotmodel.cpp > CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/robotmodel.cpp > CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.i
 
 CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kistarcl/mujoco_ws/src/robotmodel.cpp -o CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/robotmodel.cpp -o CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.s
 
 CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.o.provides.build: CMakeFiles/duala
 
 CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.o: CMakeFiles/dualarm_lib.dir/flags.make
 CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.o: ../src/trajectory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kistarcl/mujoco_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.o -c /home/kistarcl/mujoco_ws/src/trajectory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.o -c /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/trajectory.cpp
 
 CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kistarcl/mujoco_ws/src/trajectory.cpp > CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/trajectory.cpp > CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.i
 
 CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kistarcl/mujoco_ws/src/trajectory.cpp -o CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/trajectory.cpp -o CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.s
 
 CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.o.requires:
 
@@ -195,7 +195,7 @@ dualarm_lib_EXTERNAL_OBJECTS =
 ../bin/lib/libdualarm_lib.a: CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.o
 ../bin/lib/libdualarm_lib.a: CMakeFiles/dualarm_lib.dir/build.make
 ../bin/lib/libdualarm_lib.a: CMakeFiles/dualarm_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kistarcl/mujoco_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ../bin/lib/libdualarm_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ../bin/lib/libdualarm_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/dualarm_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dualarm_lib.dir/link.txt --verbose=$(VERBOSE)
 
@@ -217,6 +217,6 @@ CMakeFiles/dualarm_lib.dir/clean:
 .PHONY : CMakeFiles/dualarm_lib.dir/clean
 
 CMakeFiles/dualarm_lib.dir/depend:
-	cd /home/kistarcl/mujoco_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kistarcl/mujoco_ws /home/kistarcl/mujoco_ws /home/kistarcl/mujoco_ws/build /home/kistarcl/mujoco_ws/build /home/kistarcl/mujoco_ws/build/CMakeFiles/dualarm_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build/CMakeFiles/dualarm_lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dualarm_lib.dir/depend
 

@@ -130,17 +130,17 @@ iostream
 eigen3/Eigen/Dense
 -
 
-/home/kistarcl/mujoco_ws/src/simulate.cpp
+/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/simulate.cpp
 mjxmacro.h
-/home/kistarcl/mujoco_ws/src/mjxmacro.h
+/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/mjxmacro.h
 uitools.h
-/home/kistarcl/mujoco_ws/src/uitools.h
+/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/uitools.h
 stdio.h
-/home/kistarcl/mujoco_ws/src/stdio.h
+/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/stdio.h
 string.h
-/home/kistarcl/mujoco_ws/src/string.h
+/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/string.h
 controller.h
-/home/kistarcl/mujoco_ws/src/controller.h
+/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/controller.h
 thread
 -
 mutex

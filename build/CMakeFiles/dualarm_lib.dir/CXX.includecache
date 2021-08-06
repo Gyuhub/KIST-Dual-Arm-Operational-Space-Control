@@ -56,19 +56,19 @@ iostream
 eigen3/Eigen/Dense
 -
 
-/home/kistarcl/mujoco_ws/src/controller.cpp
+/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/controller.cpp
 controller.h
-/home/kistarcl/mujoco_ws/src/controller.h
+/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/controller.h
 
-/home/kistarcl/mujoco_ws/src/quadraticprogram.cpp
+/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/quadraticprogram.cpp
 quadraticprogram.h
-/home/kistarcl/mujoco_ws/src/quadraticprogram.h
+/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/quadraticprogram.h
 
-/home/kistarcl/mujoco_ws/src/robotmodel.cpp
+/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/robotmodel.cpp
 robotmodel.h
-/home/kistarcl/mujoco_ws/src/robotmodel.h
+/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/robotmodel.h
 
-/home/kistarcl/mujoco_ws/src/trajectory.cpp
+/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/trajectory.cpp
 trajectory.h
-/home/kistarcl/mujoco_ws/src/trajectory.h
+/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/trajectory.h
 

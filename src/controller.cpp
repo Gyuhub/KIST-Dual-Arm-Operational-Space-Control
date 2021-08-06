@@ -82,7 +82,7 @@ void CController::motionPlan()
 	_time_plan(9) = 3.0; // move home position
 
 
-	if (_bool_plan(_cnt_plan) == 1)
+	if (_bool_plan(_cnt_plan) == 1 && _bool_ee_orientation == true) // grasp the object with the tip of the e.e
 	{
 		_cnt_plan = _cnt_plan + 1;
 		if (_cnt_plan == 1) //move task position
@@ -90,14 +90,15 @@ void CController::motionPlan()
 			_pos_goal_left_hand(0) = 0.7;
 		 	_pos_goal_left_hand(1) = 0.2 + 0.075;
 		 	_pos_goal_left_hand(2) = 0.52;
-		 	_rpy_goal_left_hand(0) = 0.0 * DEG2RAD;
-			_rpy_goal_left_hand(1) = -90.0 * DEG2RAD;
-			_rpy_goal_left_hand(2) = 0.0 * DEG2RAD;
 
 			_pos_goal_right_hand(0) = 0.7;
 		 	_pos_goal_right_hand(1) = 0.2 - 0.075;
 		 	_pos_goal_right_hand(2) = 0.52;
-		 	_rpy_goal_right_hand(0) = 0.0 * DEG2RAD;
+			_rpy_goal_left_hand(0) = 0.0 * DEG2RAD;
+			_rpy_goal_left_hand(1) = -90.0 * DEG2RAD;
+			_rpy_goal_left_hand(2) = 0.0 * DEG2RAD;
+
+			_rpy_goal_right_hand(0) = 0.0 * DEG2RAD;
 			_rpy_goal_right_hand(1) = -90.0 * DEG2RAD;
 			_rpy_goal_right_hand(2) = 180.0 * DEG2RAD;
 			reset_target(_time_plan(_cnt_plan), _pos_goal_left_hand, _rpy_goal_left_hand, _pos_goal_right_hand, _rpy_goal_right_hand);
@@ -105,14 +106,12 @@ void CController::motionPlan()
 		}
 		else if (_cnt_plan == 2) //task space motion 1
 		{
-			//_pos_goal_left_hand(0) = _x_left_hand(0);
 		 	_pos_goal_left_hand(1) = _x_left_hand(1);
 		 	_pos_goal_left_hand(2) = _x_left_hand(2) - 0.05;
 		 	_rpy_goal_left_hand(0) = _x_left_hand(3);
 		 	_rpy_goal_left_hand(1) = _x_left_hand(4);
 		 	_rpy_goal_left_hand(2) = _x_left_hand(5);
 
-			//_pos_goal_right_hand(0) = _x_right_hand(0);
 		 	_pos_goal_right_hand(1) = _x_right_hand(1);
 		 	_pos_goal_right_hand(2) = _x_right_hand(2) - 0.05;
 		 	_rpy_goal_right_hand(0) = _x_right_hand(3);
@@ -187,6 +186,154 @@ void CController::motionPlan()
 
 			//_pos_goal_right_hand(0) = _x_right_hand(0);
 		 	_pos_goal_right_hand(1) = _x_right_hand(1) + 0.01;
+		 	_pos_goal_right_hand(2) = 0.47;
+		 	_rpy_goal_right_hand(0) = _x_right_hand(3);
+		 	_rpy_goal_right_hand(1) = _x_right_hand(4);
+		 	_rpy_goal_right_hand(2) = _x_right_hand(5);
+			reset_target(_time_plan(_cnt_plan), _pos_goal_left_hand, _rpy_goal_left_hand, _pos_goal_right_hand, _rpy_goal_right_hand);
+			cout << "motion plan " << _cnt_plan  << " start. task space motion 4" << endl;
+		}
+		else if (_cnt_plan == 7) // task space motion 5
+		{
+			//_pos_goal_left_hand(0) = _x_left_hand(0);
+		 	_pos_goal_left_hand(1) = -0.2 + 0.05 + 0.1;
+		 	_pos_goal_left_hand(2) = _x_left_hand(2);
+		 	_rpy_goal_left_hand(0) = _x_left_hand(3);
+		 	_rpy_goal_left_hand(1) = _x_left_hand(4);
+		 	_rpy_goal_left_hand(2) = _x_left_hand(5);
+
+			//_pos_goal_right_hand(0) = _x_right_hand(0);
+		 	_pos_goal_right_hand(1) = -0.2 - 0.05 - 0.1;
+		 	_pos_goal_right_hand(2) = _x_right_hand(2);
+		 	_rpy_goal_right_hand(0) = _x_right_hand(3);
+		 	_rpy_goal_right_hand(1) = _x_right_hand(4);
+		 	_rpy_goal_right_hand(2) = _x_right_hand(5);
+			reset_target(_time_plan(_cnt_plan), _pos_goal_left_hand, _rpy_goal_left_hand, _pos_goal_right_hand, _rpy_goal_right_hand);
+			cout << "motion plan " << _cnt_plan  << " start. task space motion 5" << endl;
+		}
+		else if (_cnt_plan == 8) // task space motion 6
+		{
+			_pos_goal_left_hand(0) = _x_left_hand(0) - 0.1;
+		 	_pos_goal_left_hand(1) = _x_left_hand(1);
+		 	_pos_goal_left_hand(2) = _x_left_hand(2) + 0.05;
+		 	_rpy_goal_left_hand(0) = _x_left_hand(3);
+		 	_rpy_goal_left_hand(1) = _x_left_hand(4);
+		 	_rpy_goal_left_hand(2) = _x_left_hand(5);
+
+			_pos_goal_right_hand(0) = _x_right_hand(0) - 0.1;
+		 	_pos_goal_right_hand(1) = _x_right_hand(1);
+		 	_pos_goal_right_hand(2) = _x_right_hand(2) + 0.05;
+		 	_rpy_goal_right_hand(0) = _x_right_hand(3);
+		 	_rpy_goal_right_hand(1) = _x_right_hand(4);
+		 	_rpy_goal_right_hand(2) = _x_right_hand(5);
+			reset_target(_time_plan(_cnt_plan), _pos_goal_left_hand, _rpy_goal_left_hand, _pos_goal_right_hand, _rpy_goal_right_hand);
+			cout << "motion plan " << _cnt_plan  << " start. task space motion 6" << endl;
+		}
+		else if (_cnt_plan == 9) // move home position
+		{
+			reset_target(_time_plan(_cnt_plan), _q_home);
+			cout << "motion plan " << _cnt_plan  << " start. move home position" << endl;
+		}
+	}
+	else if (_bool_plan(_cnt_plan) == 1 && _bool_ee_orientation == false) // grasp the object by the side of the e.e
+	{
+		_cnt_plan = _cnt_plan + 1;
+		if (_cnt_plan == 1) //move task position
+		{
+			_pos_goal_left_hand(0) = 0.7 + 0.05;
+		 	_pos_goal_left_hand(1) = 0.2 + 0.1;
+		 	_pos_goal_left_hand(2) = 0.52;
+			_rpy_goal_left_hand(0) = 0.0 * DEG2RAD;
+			_rpy_goal_left_hand(1) = -180.0 * DEG2RAD;
+			_rpy_goal_left_hand(2) = 90.0 * DEG2RAD;
+
+			_pos_goal_right_hand(0) = 0.7 + 0.05;
+		 	_pos_goal_right_hand(1) = 0.2 - 0.1;
+		 	_pos_goal_right_hand(2) = 0.52;
+			_rpy_goal_right_hand(0) = 0.0 * DEG2RAD;
+			_rpy_goal_right_hand(1) = 0.0 * DEG2RAD;
+			_rpy_goal_right_hand(2) = 90.0 * DEG2RAD;
+			reset_target(_time_plan(_cnt_plan), _pos_goal_left_hand, _rpy_goal_left_hand, _pos_goal_right_hand, _rpy_goal_right_hand);
+			cout << "motion plan " << _cnt_plan  << " start. move task position" << endl;
+		}
+		else if (_cnt_plan == 2) //task space motion 1
+		{
+		 	_pos_goal_left_hand(2) = _x_left_hand(2) - 0.05;
+		 	_rpy_goal_left_hand(0) = _x_left_hand(3);
+		 	_rpy_goal_left_hand(1) = _x_left_hand(4);
+		 	_rpy_goal_left_hand(2) = _x_left_hand(5);
+
+		 	_pos_goal_right_hand(2) = _x_right_hand(2) - 0.05;
+		 	_rpy_goal_right_hand(0) = _x_right_hand(3);
+		 	_rpy_goal_right_hand(1) = _x_right_hand(4);
+		 	_rpy_goal_right_hand(2) = _x_right_hand(5);
+			reset_target(_time_plan(_cnt_plan), _pos_goal_left_hand, _rpy_goal_left_hand, _pos_goal_right_hand, _rpy_goal_right_hand);
+			cout << "motion plan " << _cnt_plan  << " start. task space motion 1" << endl;
+		}
+		else if (_cnt_plan == 3) //task space motion 2
+		{
+		 	_pos_goal_left_hand(1) = 0.275;
+		 	_pos_goal_left_hand(2) = 0.47;
+		 	// _rpy_goal_left_hand(0) = _x_left_hand(3);
+		 	// _rpy_goal_left_hand(1) = _x_left_hand(4);
+		 	// _rpy_goal_left_hand(2) = _x_left_hand(5);
+
+		 	_pos_goal_right_hand(1) = 0.125;
+		 	_pos_goal_right_hand(2) = 0.47;
+		 	// _rpy_goal_right_hand(0) = _x_right_hand(3);
+		 	// _rpy_goal_right_hand(1) = _x_right_hand(4);
+		 	// _rpy_goal_right_hand(2) = _x_right_hand(5);
+			reset_target(_time_plan(_cnt_plan), _pos_goal_left_hand, _rpy_goal_left_hand, _pos_goal_right_hand, _rpy_goal_right_hand);
+			cout << "motion plan " << _cnt_plan  << " start. task space motion 2" << endl;
+		}
+		else if (_cnt_plan == 4) //task space motion 3
+		{
+			//_pos_goal_left_hand(0) = 0.7;
+		 	_pos_goal_left_hand(1) = _x_left_hand(1) - 0.05;
+		 	_pos_goal_left_hand(2) = _x_left_hand(2) + 0.05;
+		 	// _rpy_goal_left_hand(0) = _x_left_hand(3);
+		 	// _rpy_goal_left_hand(1) = _x_left_hand(4);
+		 	// _rpy_goal_left_hand(2) = _x_left_hand(5);
+
+			//_pos_goal_right_hand(0) = 0.7;
+		 	_pos_goal_right_hand(1) = _x_right_hand(1) + 0.05;
+		 	_pos_goal_right_hand(2) = _x_right_hand(2) + 0.05;
+		 	// _rpy_goal_right_hand(0) = _x_right_hand(3);
+		 	// _rpy_goal_right_hand(1) = _x_right_hand(4);
+		 	// _rpy_goal_right_hand(2) = _x_right_hand(5);
+
+			reset_target(_time_plan(_cnt_plan), _pos_goal_left_hand, _rpy_goal_left_hand, _pos_goal_right_hand, _rpy_goal_right_hand);
+			cout << "motion plan " << _cnt_plan  << " start. task space motion 3" << endl;
+		}
+		else if (_cnt_plan == 5) //move to another task position
+		{
+			//_pos_goal_left_hand(0) = 0.7;
+		 	_pos_goal_left_hand(1) = -0.2 + 0.05 + 0.05;
+		 	_pos_goal_left_hand(2) = 0.52;
+		 	_rpy_goal_left_hand(0) = 0.0 * DEG2RAD;
+			_rpy_goal_left_hand(1) = -180.0 * DEG2RAD;
+			_rpy_goal_left_hand(2) = 90.0 * DEG2RAD;
+
+			//_pos_goal_right_hand(0) = 0.7;
+		 	_pos_goal_right_hand(1) = -0.2 - 0.05 - 0.05;
+		 	_pos_goal_right_hand(2) = 0.52;
+		 	_rpy_goal_right_hand(0) = 0.0 * DEG2RAD;
+			_rpy_goal_right_hand(1) = 0.0 * DEG2RAD;
+			_rpy_goal_right_hand(2) = 90.0 * DEG2RAD;
+			reset_target(_time_plan(_cnt_plan), _pos_goal_left_hand, _rpy_goal_left_hand, _pos_goal_right_hand, _rpy_goal_right_hand);
+			cout << "motion plan " << _cnt_plan  << " start. move to another task position" << endl;
+		}
+		else if (_cnt_plan == 6) //task space motion 4
+		{
+			//_pos_goal_left_hand(0) = _x_left_hand(0);
+		 	_pos_goal_left_hand(1) = _x_left_hand(1) - 0.05;
+		 	_pos_goal_left_hand(2) = 0.47;
+		 	_rpy_goal_left_hand(0) = _x_left_hand(3);
+		 	_rpy_goal_left_hand(1) = _x_left_hand(4);
+		 	_rpy_goal_left_hand(2) = _x_left_hand(5);
+
+			//_pos_goal_right_hand(0) = _x_right_hand(0);
+		 	_pos_goal_right_hand(1) = _x_right_hand(1) + 0.05;
 		 	_pos_goal_right_hand(2) = 0.47;
 		 	_rpy_goal_right_hand(0) = _x_right_hand(3);
 		 	_rpy_goal_right_hand(1) = _x_right_hand(4);
@@ -859,6 +1006,7 @@ void CController::Initialize()
 	_Rdot_err_left_hand.setZero();
 	_Rdot_err_right_hand.setZero();
 
+	_bool_ee_orientation = true; // TEST(!!!!!!!!!!!!!!!!!!!!!!!!!)
 	_cnt_plan = 0;
 	_bool_plan.setZero(20);
 	_time_plan.resize(20);

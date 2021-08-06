@@ -17,14 +17,14 @@ CMakeFiles/dualarm_lib.dir/src/controller.cpp.o
  ../include/quadraticprogram.h
  ../include/robotmodel.h
  ../include/trajectory.h
- /home/kistarcl/mujoco_ws/src/controller.cpp
+ /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/controller.cpp
 CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.o
  ../include/quadraticprogram.h
- /home/kistarcl/mujoco_ws/src/quadraticprogram.cpp
+ /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/quadraticprogram.cpp
 CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.o
  ../include/custommath.h
  ../include/robotmodel.h
- /home/kistarcl/mujoco_ws/src/robotmodel.cpp
+ /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/robotmodel.cpp
 CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.o
  ../include/trajectory.h
- /home/kistarcl/mujoco_ws/src/trajectory.cpp
+ /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/trajectory.cpp

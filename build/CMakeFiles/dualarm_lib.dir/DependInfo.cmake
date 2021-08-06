@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c" "/home/kistarcl/mujoco_ws/build/CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.o"
+  "/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c" "/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build/CMakeFiles/dualarm_lib.dir/home/kistarcl/.mujoco/mujoco200_linux/include/uitools.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -16,10 +16,10 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/local/include/qpOASES"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kistarcl/mujoco_ws/src/controller.cpp" "/home/kistarcl/mujoco_ws/build/CMakeFiles/dualarm_lib.dir/src/controller.cpp.o"
-  "/home/kistarcl/mujoco_ws/src/quadraticprogram.cpp" "/home/kistarcl/mujoco_ws/build/CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.o"
-  "/home/kistarcl/mujoco_ws/src/robotmodel.cpp" "/home/kistarcl/mujoco_ws/build/CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.o"
-  "/home/kistarcl/mujoco_ws/src/trajectory.cpp" "/home/kistarcl/mujoco_ws/build/CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.o"
+  "/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/controller.cpp" "/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build/CMakeFiles/dualarm_lib.dir/src/controller.cpp.o"
+  "/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/quadraticprogram.cpp" "/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build/CMakeFiles/dualarm_lib.dir/src/quadraticprogram.cpp.o"
+  "/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/robotmodel.cpp" "/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build/CMakeFiles/dualarm_lib.dir/src/robotmodel.cpp.o"
+  "/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/src/trajectory.cpp" "/home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build/CMakeFiles/dualarm_lib.dir/src/trajectory.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

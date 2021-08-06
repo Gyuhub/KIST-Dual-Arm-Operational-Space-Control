@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kistarcl/mujoco_ws
+CMAKE_SOURCE_DIR = /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kistarcl/mujoco_ws/build
+CMAKE_BINARY_DIR = /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kistarcl/mujoco_ws/build/CMakeFiles /home/kistarcl/mujoco_ws/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build/CMakeFiles /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kistarcl/mujoco_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kistarcl/KIST-Dual-Arm-Operational-Space-Control/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

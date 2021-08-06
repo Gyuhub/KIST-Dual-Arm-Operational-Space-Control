@@ -59,6 +59,7 @@ private:
 	void reset_target(double motion_time, Vector3d target_pos_lh, Vector3d target_ori_lh, Vector3d target_pos_rh, Vector3d target_ori_rh);
 	void motionPlan();
 	int _cnt_plan;
+	bool _bool_ee_orientation; // TEST(!!!!!!!!!!!!!!!!!!)
 	VectorXd _time_plan;
 	VectorXi _bool_plan;
 	VectorXd _q_object; // TEST(!!!!!!!!!!!!!!!!!!)

@@ -160,7 +160,9 @@
         <pair geom1 ="object1" geom2 ="task_table 2" friction ="1 1 0.005 0.0001 0.0001" condim ="3" margin =" 0.0" />
         <pair geom1 ="task_table 1" geom2 ="tableleg1" friction ="1 1 0.005 0.0001 0.0001" condim ="3" margin =" 0.0" />
         <pair geom1 ="task_table 2" geom2 ="tableleg2" friction ="1 1 0.005 0.0001 0.0001" condim ="3" margin =" 0.0" />
+        <pair geom1 ="LWrR_Link" geom2 ="object1" friction ="1 1 0.005 0.0001 0.0001" condim ="3" margin =" 0.0" />
     	<pair geom1 ="LWrR_Link_geo" geom2 ="object1" friction ="1 1 0.005 0.0001 0.0001" condim ="3" margin =" 0.0" />
+        <pair geom1 ="RWrR_Link" geom2 ="object1" friction ="1 1 0.005 0.0001 0.0001" condim ="3" margin =" 0.0" />
         <pair geom1 ="RWrR_Link_geo" geom2 ="object1" friction ="1 1 0.005 0.0001 0.0001" condim ="3" margin =" 0.0" />
     </contact>
 

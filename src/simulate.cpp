@@ -6,7 +6,6 @@
 
         https://www.roboti.us/resourcelicense.txt
 */
-
 #include "mjxmacro.h"
 #include "uitools.h"
 #include "stdio.h"
